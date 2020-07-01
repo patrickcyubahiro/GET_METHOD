@@ -4,17 +4,13 @@
 	<title>PHP</title>
 </head>
 <body>
-	<?php 
-
-	?>
 	<form action="site.php" method="get">
-		Name: <input type="text" name="name">
-		Age: <input type="number" name="age">	
+		<input type="number" name="firstNumber">
+		<br>
+		<input type="number" name="secondNumber">	
+		<br>
 		<input type="submit">   	
 	</form>
-		<br>
-		Your name is <?php echo $_GET["name"] ?>
-		<br>
-		Your age is <?php echo $_GET["age"] ?>
+	Answer: <?php echo $_GET["firstNumber"] + $_GET["secondNumber"]	?>
 </body>
 </html>
